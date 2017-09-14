@@ -1,1 +1,3 @@
-<h1>Home view</h1>
+<p>
+    <?= $data['msg']; ?>
+</p>

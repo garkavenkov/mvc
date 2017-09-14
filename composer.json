@@ -1,6 +1,6 @@
 {
     "name": "garkavenkov/mvc",
-    "description": "Simple but powerfull MVC framework",
+    "description": "Lightweight but powerful PHP MVC framework",
     "type": "project",
     "require": {
         "garkavenkov/db-connector": "^1.0"

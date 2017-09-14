@@ -13,6 +13,4 @@ spl_autoload_register(function($class) {
 use core\Router;
 
 $router = new Router();
-echo "<pre>";
-var_dump($router);
-echo "</pre>";
+$router->dispatch($_SERVER['QUERY_STRING']);

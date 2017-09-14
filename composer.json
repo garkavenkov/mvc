@@ -1,0 +1,15 @@
+{
+    "name": "garkavenkov/mvc",
+    "description": "Simple but powerfull MVC framework",
+    "type": "project",
+    "require": {
+        "garkavenkov/db-connector": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maksim Garkavenkov",
+            "email": "maksim.garkavenkov@gmail.com"
+        }
+    ]
+}

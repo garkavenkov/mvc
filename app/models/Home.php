@@ -1,8 +1,8 @@
 <?php
 
-namespace MVC\App\Models;
+namespace app\Models;
 
-use MVC\Core\Model;
+use core\Model;
 
 class Home extends Model
 {

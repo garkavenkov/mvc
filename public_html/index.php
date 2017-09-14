@@ -2,7 +2,15 @@
 
 require '../vendor/autoload.php';
 
-use Core\Router;
+spl_autoload_register(function($class) {
+    $root = dirname(__DIR__); // get the parent directory
+    $file = $root . '/' . str_replace('\\', '/', $class) . '.php';
+    if (is_readable($file)) {
+        require $file;
+    }
+});
+
+use core\Router;
 
 $router = new Router();
 echo "<pre>";

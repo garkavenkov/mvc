@@ -1,8 +1,8 @@
 <?php
 
-namespace MVC\App\Controllers;
+namespace app\Controllers;
 
-use MVC\Core\Controller;
+use core\Controller;
 
 class Home extends Controller
 {

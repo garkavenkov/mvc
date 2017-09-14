@@ -1,6 +1,6 @@
 <?php
 
-namespace MVC\Core;
+namespace core;
 
 abstract class View
 {

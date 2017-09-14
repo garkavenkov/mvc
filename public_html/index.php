@@ -1,16 +1,17 @@
 <?php
 
-require '../vendor/autoload.php';
+/**
+ * Include initialization file
+ */
+require realpath(dirname(__FILE__) . '/../sys/init.php');
 
-spl_autoload_register(function($class) {
-    $root = dirname(__DIR__); // get the parent directory
-    $file = $root . '/' . str_replace('\\', '/', $class) . '.php';
-    if (is_readable($file)) {
-        require $file;
-    }
-});
+/**
+ * Include bootstrap file
+ */
+require APP_DIR . 'bootstrap.php';
 
-use core\Router;
-
-$router = new Router();
+/**
+ * Create an Router object 
+ */
+$router = new core\Router();
 $router->dispatch($_SERVER['QUERY_STRING']);

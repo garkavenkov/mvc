@@ -1,0 +1,21 @@
+{
+    "name": "garkavenkov/mvc",
+    "description": "Lightweight PHP MVC framework",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "garkavenkov/mvc-framework": "dev-main"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maksim Garkavenkov",
+            "email": "maksim.garkavenkov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

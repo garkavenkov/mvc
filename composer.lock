@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f2a74a188b3e5774d842228fc3b9d561",
+    "packages": [
+        {
+            "name": "garkavenkov/mvc-framework",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/garkavenkov/mvc-framework.git",
+                "reference": "960b00a87e721f97ea30f007c62cde5c9ac560cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/garkavenkov/mvc-framework/zipball/960b00a87e721f97ea30f007c62cde5c9ac560cd",
+                "reference": "960b00a87e721f97ea30f007c62cde5c9ac560cd",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MVC\\Framework\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maksim Garkavenkov",
+                    "email": "maksim.garkavenkov@gmail.com"
+                }
+            ],
+            "description": "MVC Framework",
+            "support": {
+                "issues": "https://github.com/garkavenkov/mvc-framework/issues",
+                "source": "https://github.com/garkavenkov/mvc-framework/tree/v0.3.0"
+            },
+            "time": "2023-09-06T11:28:01+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "garkavenkov/mvc-framework": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}

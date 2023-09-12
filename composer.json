@@ -7,11 +7,12 @@
             "App\\": "app/"
         },
         "files": [
-            "app/Helpers/aliases.php"
+            "core/helpers/aliases.php"
         ]
     },
     "require": {
-        "garkavenkov/mvc-framework": "dev-main"
+        "garkavenkov/mvc-framework": "dev-main",
+        "garkavenkov/advanced-print": "dev-master"
     },
     "license": "MIT",
     "authors": [

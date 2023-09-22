@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2f5c9ec3c3be41004b76ad4f583779d",
+    "content-hash": "4ce5a08ae8404835273d1dae5a4a347b",
     "packages": [
         {
             "name": "garkavenkov/advanced-print",
@@ -45,18 +45,59 @@
             "time": "2022-02-22T07:29:52+00:00"
         },
         {
+            "name": "garkavenkov/db-connector",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/garkavenkov/db-connector.git",
+                "reference": "b050664c717648a39f845f96ca1a9b95a72cdbae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/garkavenkov/db-connector/zipball/b050664c717648a39f845f96ca1a9b95a72cdbae",
+                "reference": "b050664c717648a39f845f96ca1a9b95a72cdbae",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DBConnector\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maksim Garkavenkov",
+                    "email": "maksim.garkavenkov@gmail.com"
+                }
+            ],
+            "description": "Wrapper for PDO",
+            "support": {
+                "issues": "https://github.com/garkavenkov/db-connector/issues",
+                "source": "https://github.com/garkavenkov/db-connector/tree/v1.1.1"
+            },
+            "time": "2023-09-15T16:53:06+00:00"
+        },
+        {
             "name": "garkavenkov/mvc-framework",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/garkavenkov/mvc-framework.git",
-                "reference": "1ccbf7eca851f5b109a0c770d76ee1b8f6993ccb"
+                "reference": "f72fc897b7d1b4ab1c7f3e9efacfeda708e1a356"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/garkavenkov/mvc-framework/zipball/1ccbf7eca851f5b109a0c770d76ee1b8f6993ccb",
-                "reference": "1ccbf7eca851f5b109a0c770d76ee1b8f6993ccb",
+                "url": "https://api.github.com/repos/garkavenkov/mvc-framework/zipball/f72fc897b7d1b4ab1c7f3e9efacfeda708e1a356",
+                "reference": "f72fc897b7d1b4ab1c7f3e9efacfeda708e1a356",
                 "shasum": ""
+            },
+            "require": {
+                "garkavenkov/db-connector": "dev-master"
             },
             "default-branch": true,
             "type": "library",
@@ -78,9 +119,9 @@
             "description": "MVC Framework",
             "support": {
                 "issues": "https://github.com/garkavenkov/mvc-framework/issues",
-                "source": "https://github.com/garkavenkov/mvc-framework/tree/v0.5.3"
+                "source": "https://github.com/garkavenkov/mvc-framework/tree/v0.6.0"
             },
-            "time": "2023-09-12T10:02:53+00:00"
+            "time": "2023-09-20T18:01:07+00:00"
         }
     ],
     "packages-dev": [],
@@ -88,7 +129,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "garkavenkov/mvc-framework": 20,
-        "garkavenkov/advanced-print": 20
+        "garkavenkov/advanced-print": 20,
+        "garkavenkov/db-connector": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

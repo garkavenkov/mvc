@@ -9,7 +9,9 @@ require '../core/init.php';
 require CONFIG_DIR . '/app.php';
 require ROOT_DIR . '/vendor/autoload.php';
 
+use DBConnector\DBConnect;
 use MVC\Framework\Core\Routing\Router;
 
 Router::loadRoutes();
 
+$dbh = DBConnect::getInstance();

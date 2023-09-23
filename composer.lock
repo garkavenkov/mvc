@@ -50,12 +50,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/garkavenkov/db-connector.git",
-                "reference": "b050664c717648a39f845f96ca1a9b95a72cdbae"
+                "reference": "4879b7bf22413ca122777496b0fd9bf288df3b5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/garkavenkov/db-connector/zipball/b050664c717648a39f845f96ca1a9b95a72cdbae",
-                "reference": "b050664c717648a39f845f96ca1a9b95a72cdbae",
+                "url": "https://api.github.com/repos/garkavenkov/db-connector/zipball/4879b7bf22413ca122777496b0fd9bf288df3b5c",
+                "reference": "4879b7bf22413ca122777496b0fd9bf288df3b5c",
                 "shasum": ""
             },
             "default-branch": true,
@@ -78,9 +78,9 @@
             "description": "Wrapper for PDO",
             "support": {
                 "issues": "https://github.com/garkavenkov/db-connector/issues",
-                "source": "https://github.com/garkavenkov/db-connector/tree/v1.1.1"
+                "source": "https://github.com/garkavenkov/db-connector/tree/v1.2.0"
             },
-            "time": "2023-09-15T16:53:06+00:00"
+            "time": "2023-09-23T10:11:55+00:00"
         },
         {
             "name": "garkavenkov/mvc-framework",

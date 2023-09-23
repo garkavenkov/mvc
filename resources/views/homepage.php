@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo SITENAME; ?></title>
-</head>
-<body>
-    <h1>MVC Framework</h1>
-</body>
-</html>
+<?php view_partial('header'); ?>
+    
+<h1>MVC Framework</h1>
+
+<?php view_partial('footer'); ?>

@@ -15,7 +15,7 @@ $commands = [
   'server' => 'startServer',
   'make:controller' => 'makeController',
   'make:model'  =>  'makeModel',
-  'route:list'  =>  'routeList'
+  'route:list'  =>  'routeList',
 ];
 
 if ($argc == 1) {  
@@ -267,7 +267,7 @@ function makeModel(array $argv) {
     AP::printLn("[B_Red]Error:[Reset]Укажите наименование модели.");
     echo "\n";
     die();
-  }
+  }  
   
   $model_name = array_shift($argv);
 

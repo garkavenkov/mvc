@@ -133,7 +133,7 @@ function makeController(array $argv) {
   // --resource
   // --api
   // --model=<Model>
-
+  // print_r($argv); die();
   if (count($argv) == 0) {
     echo "\n";
     AP::printLn("[B_Red]Error:[Reset] Enter controller name");
@@ -268,9 +268,25 @@ function makeModel(array $argv) {
     echo "\n";
     die();
   }  
-  
+  // print_r($argv); die();
   $model_name = array_shift($argv);
+  
+  $controller_name = '';
+  $controller_type = '';
 
+  foreach($argv as $argument) {        
+    list($arg, $value) = array_pad(explode('=', $argument, 2), 2, '');
+    if ($arg == '--controller') {
+      $controller_name = $model_name . 'Controller';
+      if (in_array($value, ['resource', 'api'])) {
+        $controller_type = '--' . $value;
+      }
+    }   
+   
+  }  
+
+  // die();
+  
   $file_info = prepareName($model_name);
 
   $content  = "<?php\n";
@@ -288,7 +304,12 @@ function makeModel(array $argv) {
     echo "\n";
     AP::printLn("Model [B_Green]{$file_info['file_name']}[Reset] has been successfully created.");
     echo "\n";
-  }  
+  }
+
+  if ($controller_name !== '') {
+    makeController([$controller_name, $controller_type]);
+  }
+  
 }
 
 

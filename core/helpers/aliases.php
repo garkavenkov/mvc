@@ -16,5 +16,9 @@ function view_partial(string $name)
     }
 
     require VIEWS_DIR . "/partials/$name";
+}
 
+function public_resource(string $resource)
+{    
+    echo URL . '/' . ltrim($resource, '/');
 }

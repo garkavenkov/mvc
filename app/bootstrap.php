@@ -14,4 +14,4 @@ use MVC\Framework\Core\Routing\Router;
 
 Router::loadRoutes();
 
-$dbh = DBConnect::getInstance();
+// $dbh = DBConnect::getInstance();

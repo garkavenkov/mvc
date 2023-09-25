@@ -41,8 +41,7 @@ if (array_key_exists($command, $commands)) {
  * @param array $argv Arguments
  * @return void
  */
-function startServer(array $argv) {
-  echo "Starting local server\n";
+function startServer(array $argv) { 
   $host = '127.0.0.1';
   $port = 8080;
   $www  = 'public';
@@ -67,10 +66,7 @@ function startServer(array $argv) {
         default:          
           break;
       }    
-  }
-  if ($env !== '') {
-    putenv("ENV=$env");
-  }
+  } 
    
   while(true) 
   {
@@ -84,7 +80,14 @@ function startServer(array $argv) {
       break;
     }    
   }
-  exec("php -S $host:$port -t $www");
+
+  AP::printLn("[B_White]Starting local server...");
+  if ($env !== '') {    
+    putenv(sprintf('ENV=%s', $env));
+    AP::printLn("[White]Using [B_Red]$env [White]environment.");
+  }
+
+  exec("php -S $host:$port -t $www");  
 }
 
 /**

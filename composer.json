@@ -13,8 +13,9 @@
     "require": {
         "garkavenkov/mvc-framework": "dev-main",
         "garkavenkov/advanced-print": "dev-master",
-        "garkavenkov/db-connector": "dev-master"
-    },
+        "garkavenkov/db-connector": "dev-master",
+        "garkavenkov/dotenv": "dev-main"       
+    },   
     "license": "MIT",
     "authors": [
         {

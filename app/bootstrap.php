@@ -5,13 +5,14 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require '../core/init.php';
-
-require CONFIG_DIR . '/app.php';
 require ROOT_DIR . '/vendor/autoload.php';
 
-use DBConnector\DBConnect;
-use MVC\Framework\Core\Routing\Router;
+Dotenv\Dotenv::load(path: ROOT_DIR);
 
-Router::loadRoutes();
+require CONFIG_DIR . '/app.php';
 
-// $dbh = DBConnect::getInstance();
+MVC\Framework\Core\Routing\Router::loadRoutes();
+
+if (env('DB_DRIVER')) {
+    $dbh = DBConnector\DBConnect::getInstance();
+}

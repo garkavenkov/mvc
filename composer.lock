@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ce5a08ae8404835273d1dae5a4a347b",
+    "content-hash": "ea8f6d22a7803bd271946d5ede09fe7a",
     "packages": [
         {
             "name": "garkavenkov/advanced-print",
@@ -83,6 +83,44 @@
             "time": "2023-09-23T10:11:55+00:00"
         },
         {
+            "name": "garkavenkov/dotenv",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/garkavenkov/dotenv.git",
+                "reference": "37cbc86d79a34f072db5f52e375a8a86f7da01c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/garkavenkov/dotenv/zipball/37cbc86d79a34f072db5f52e375a8a86f7da01c4",
+                "reference": "37cbc86d79a34f072db5f52e375a8a86f7da01c4",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maksim Garkavenkov",
+                    "email": "maksim.garkavenkov@gmail.com"
+                }
+            ],
+            "description": "Register environments variable from .env",
+            "support": {
+                "issues": "https://github.com/garkavenkov/dotenv/issues",
+                "source": "https://github.com/garkavenkov/dotenv/tree/v1.0.0"
+            },
+            "time": "2023-09-25T10:11:46+00:00"
+        },
+        {
             "name": "garkavenkov/mvc-framework",
             "version": "dev-main",
             "source": {
@@ -130,7 +168,8 @@
     "stability-flags": {
         "garkavenkov/mvc-framework": 20,
         "garkavenkov/advanced-print": 20,
-        "garkavenkov/db-connector": 20
+        "garkavenkov/db-connector": 20,
+        "garkavenkov/dotenv": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

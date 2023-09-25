@@ -43,11 +43,35 @@ if (array_key_exists($command, $commands)) {
  */
 function startServer(array $argv) {
   echo "Starting local server\n";
-  
-  $host = array_shift($argv) ?: '127.0.0.1' ;
-  $port = array_shift($argv) ?: 8080;
-  $www = array_shift($argv)  ?: 'public';
- 
+  $host = '127.0.0.1';
+  $port = 8080;
+  $www  = 'public';
+  $env  = '';
+
+  foreach($argv as $argument) {
+    list($arg, $value) = array_pad(explode('=', $argument, 2), 2, '');
+    // if ($arg == '--host') {
+      switch ($arg) {        
+        case '--host':
+          $host = $value;
+          break;
+        case '--port':          
+          $port = $value;
+          break;        
+        case '--www':          
+          $www = $value;
+          break;
+        case '--env':          
+          $env = $value;
+          break;
+        default:          
+          break;
+      }    
+  }
+  if ($env !== '') {
+    putenv("ENV=$env");
+  }
+   
   while(true) 
   {
     $connection = @fsockopen($host, $port);    

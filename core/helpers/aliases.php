@@ -1,5 +1,7 @@
 <?php
 
+use Http\Request;
+use Registry\Registry;
 use MVC\Framework\Base\View;
 
 function view(string $name, array $data=[])
@@ -48,7 +50,7 @@ function pr($data)
         border: 1px solid #dfdfdf;
         border-radius: 5px;">';
     print_r($data);
-    echo '</div>';    
+    echo '</pre>';    
     
 }
 
@@ -68,4 +70,34 @@ function vd($data)
             border-radius: 5px;">';
     var_dump($data);
     echo '</pre>';    
+}
+
+/**
+ * Wrapper for Request
+ *
+ * @return void
+ */
+function request()
+{
+    return new Request();
+}
+
+function redirect(string $url, int $statusCode = 303, string $flash = null)
+{    
+    if (!is_null($flash)) {
+        (Registry::get('session'))->set('flash', $flash);
+    }
+    header('Location: ' . $url, true, $statusCode);
+    die();
+}
+
+/**
+ * Wrapper for Session 
+ *
+ * @param string $name  Session variable name
+ * @return mixed        Session variable value
+ */
+function session(string $name): mixed
+{
+    return (Registry::get('session'))->get($name);
 }

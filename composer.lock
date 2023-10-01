@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96a265a274b7a2d124f7192bee260e8a",
+    "content-hash": "985a2f805660811ee5a86f3f33951210",
     "packages": [
         {
             "name": "garkavenkov/advanced-print",
@@ -121,17 +121,58 @@
             "time": "2023-09-25T10:11:46+00:00"
         },
         {
+            "name": "garkavenkov/http",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/garkavenkov/http.git",
+                "reference": "a43ab748ee7f8aac762d13d427576eac9bbffe11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/garkavenkov/http/zipball/a43ab748ee7f8aac762d13d427576eac9bbffe11",
+                "reference": "a43ab748ee7f8aac762d13d427576eac9bbffe11",
+                "shasum": ""
+            },
+            "require": {
+                "garkavenkov/registry": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maksim Garkavenkov",
+                    "email": "maksim.garkavenkov@gmail.com"
+                }
+            ],
+            "description": "The PHP library that provides utilities for dealing with http requests and responses.",
+            "support": {
+                "issues": "https://github.com/garkavenkov/http/issues",
+                "source": "https://github.com/garkavenkov/http/tree/v0.3.0"
+            },
+            "time": "2023-10-01T12:08:26+00:00"
+        },
+        {
             "name": "garkavenkov/mvc-framework",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/garkavenkov/mvc-framework.git",
-                "reference": "983a62c08dd8f57172ef047f27366ab400c07610"
+                "reference": "f3e4c7ce7d3bc21a4449be984eba269620b4f747"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/garkavenkov/mvc-framework/zipball/983a62c08dd8f57172ef047f27366ab400c07610",
-                "reference": "983a62c08dd8f57172ef047f27366ab400c07610",
+                "url": "https://api.github.com/repos/garkavenkov/mvc-framework/zipball/f3e4c7ce7d3bc21a4449be984eba269620b4f747",
+                "reference": "f3e4c7ce7d3bc21a4449be984eba269620b4f747",
                 "shasum": ""
             },
             "require": {
@@ -158,9 +199,9 @@
             "description": "MVC Framework",
             "support": {
                 "issues": "https://github.com/garkavenkov/mvc-framework/issues",
-                "source": "https://github.com/garkavenkov/mvc-framework/tree/v0.7.0"
+                "source": "https://github.com/garkavenkov/mvc-framework/tree/v0.10.0"
             },
-            "time": "2023-09-25T18:06:51+00:00"
+            "time": "2023-10-01T17:17:43+00:00"
         },
         {
             "name": "garkavenkov/registry",
@@ -199,6 +240,44 @@
                 "source": "https://github.com/garkavenkov/registry/tree/v1.0.0"
             },
             "time": "2023-09-25T17:49:01+00:00"
+        },
+        {
+            "name": "garkavenkov/session-manager",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/garkavenkov/session-manager.git",
+                "reference": "e317f59249d4e05547f4bf5435a8efc9fa66274c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/garkavenkov/session-manager/zipball/e317f59249d4e05547f4bf5435a8efc9fa66274c",
+                "reference": "e317f59249d4e05547f4bf5435a8efc9fa66274c",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Http\\Session\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maksim Garkavenkov",
+                    "email": "maksim.garkavenkov@gmail.com"
+                }
+            ],
+            "description": "Wrapper for $_SESSION",
+            "support": {
+                "issues": "https://github.com/garkavenkov/session-manager/issues",
+                "source": "https://github.com/garkavenkov/session-manager/tree/v1.0.0"
+            },
+            "time": "2023-09-29T17:55:28+00:00"
         }
     ],
     "packages-dev": [],
@@ -208,7 +287,9 @@
         "garkavenkov/advanced-print": 20,
         "garkavenkov/db-connector": 20,
         "garkavenkov/dotenv": 20,
-        "garkavenkov/mvc-framework": 20
+        "garkavenkov/mvc-framework": 20,
+        "garkavenkov/http": 20,
+        "garkavenkov/session-manager": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -14,7 +14,9 @@
         "garkavenkov/advanced-print": "dev-master",
         "garkavenkov/db-connector": "dev-master",
         "garkavenkov/dotenv": "dev-main",
-        "garkavenkov/mvc-framework": "dev-main"       
+        "garkavenkov/mvc-framework": "dev-main",
+        "garkavenkov/http": "dev-main",
+        "garkavenkov/session-manager": "dev-main"       
     },   
     "license": "MIT",
     "authors": [

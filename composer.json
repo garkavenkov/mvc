@@ -17,7 +17,13 @@
         "garkavenkov/mvc-framework": "dev-main",
         "garkavenkov/http": "dev-main",
         "garkavenkov/session-manager": "dev-main"       
-    },   
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/mnt/Work/Projects/PHP/mvc-cmd-tool"
+        }
+    ],
     "license": "MIT",
     "authors": [
         {

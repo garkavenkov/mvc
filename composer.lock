@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "985a2f805660811ee5a86f3f33951210",
+    "content-hash": "febec8383b2b80f64499224acabef4e7",
     "packages": [
         {
             "name": "garkavenkov/advanced-print",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/garkavenkov/advanced-print.git",
-                "reference": "b7512dab13fc87bb1d508045a8aefc3f7f182fff"
+                "reference": "2c6473ebdad734c9424c05d60371eb421a851e43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/garkavenkov/advanced-print/zipball/b7512dab13fc87bb1d508045a8aefc3f7f182fff",
-                "reference": "b7512dab13fc87bb1d508045a8aefc3f7f182fff",
+                "url": "https://api.github.com/repos/garkavenkov/advanced-print/zipball/2c6473ebdad734c9424c05d60371eb421a851e43",
+                "reference": "2c6473ebdad734c9424c05d60371eb421a851e43",
                 "shasum": ""
             },
             "default-branch": true,
@@ -40,9 +40,9 @@
             "description": "Colorizes output text in terminal.",
             "support": {
                 "issues": "https://github.com/garkavenkov/advanced-print/issues",
-                "source": "https://github.com/garkavenkov/advanced-print/tree/v0.2.1"
+                "source": "https://github.com/garkavenkov/advanced-print/tree/v0.3.0"
             },
-            "time": "2022-02-22T07:29:52+00:00"
+            "time": "2023-10-04T19:39:25+00:00"
         },
         {
             "name": "garkavenkov/db-connector",
@@ -167,15 +167,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/garkavenkov/mvc-framework.git",
-                "reference": "f3e4c7ce7d3bc21a4449be984eba269620b4f747"
+                "reference": "e299843f9ba7ff41aad812e1745155124ae78693"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/garkavenkov/mvc-framework/zipball/f3e4c7ce7d3bc21a4449be984eba269620b4f747",
-                "reference": "f3e4c7ce7d3bc21a4449be984eba269620b4f747",
+                "url": "https://api.github.com/repos/garkavenkov/mvc-framework/zipball/e299843f9ba7ff41aad812e1745155124ae78693",
+                "reference": "e299843f9ba7ff41aad812e1745155124ae78693",
                 "shasum": ""
             },
             "require": {
+                "garkavenkov/advanced-print": "dev-master",
                 "garkavenkov/db-connector": "dev-master",
                 "garkavenkov/registry": "dev-main"
             },
@@ -199,9 +200,9 @@
             "description": "MVC Framework",
             "support": {
                 "issues": "https://github.com/garkavenkov/mvc-framework/issues",
-                "source": "https://github.com/garkavenkov/mvc-framework/tree/v0.10.0"
+                "source": "https://github.com/garkavenkov/mvc-framework/tree/v0.11.0"
             },
-            "time": "2023-10-01T17:17:43+00:00"
+            "time": "2023-10-04T20:00:20+00:00"
         },
         {
             "name": "garkavenkov/registry",
